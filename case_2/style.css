@@ -1,0 +1,75 @@
+body{
+
+    background-color: #0093ff;
+    margin:0;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+section > div{
+    position: relative;
+    margin: auto;
+
+}
+
+section .outerCircle{
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-top: 20px solid red;
+    border-bottom: 20px solid white;
+    border-right: 20px solid white;
+    border-left: 20px solid white;
+    border-radius: 50%;
+    position: relative;
+
+
+    animation-name: circle;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+
+
+section .innerCircle{
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #858484;
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Arial Black",sans-serif;
+    font-size: 40px;
+}
+
+.innerCircle:active{
+    transition: 0.9ms;
+
+
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
